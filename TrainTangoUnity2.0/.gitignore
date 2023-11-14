@@ -74,5 +74,5 @@ crashlytics-build.properties
 # Custom additions to ignore long filename paths
 /Library/PackageCache/
 # OR specific subdirectories
-/TrainTangoUnity2.0/Library/PackageCache/com.unity.collab-proxy@2.1.0/
-/TrainTangoUnity2.0/Library/PackageCache/com.unity.ide.visualstudio@2.0.21/
+# /TrainTangoUnity2.0/Library/PackageCache/com.unity.collab-proxy@2.1.0/
+# /TrainTangoUnity2.0/Library/PackageCache/com.unity.ide.visualstudio@2.0.21/
