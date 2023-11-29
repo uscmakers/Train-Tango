@@ -5,28 +5,37 @@ using UnityEngine;
 public class SerialDataReceiver : MonoBehaviour
 {
     SerialPort serialPort;
-    public string portName = "COM9"; // Example port name
-    public int baudRate = 115200;      // Example baud rate
+    public string portName = "COM8"; // Example port name
+    public int baudRate = 115200; // Example baud rate
+
+    private const float totalCooldown = 1f;
+    private float cooldownTimer = 1f;
 
     void Start()
     {
         serialPort = new SerialPort(portName, baudRate);
         serialPort.Open();
     }
+
     private void Update()
     {
         string dataString = serialPort.ReadLine();
-        Debug.Log(dataString);
-        if (serialPort != null && serialPort.IsOpen && serialPort.BytesToRead > 0)
+        //Debug.Log(dataString);
+    
+        try
         {
-            try
+            if (cooldownTimer >= totalCooldown)
             {
-                //HandleData(dataString);
+                HandleData(dataString);
             }
-            catch (Exception e)
+            else
             {
-                Debug.LogWarning("Error reading from serial port: " + e.Message);
+                cooldownTimer += Time.deltaTime;
             }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("Error reading from serial port: " + e.Message);
         }
     }
 
@@ -75,7 +84,10 @@ public class SerialDataReceiver : MonoBehaviour
 
                         // Use the parsed data
                         Debug.Log("Accelerometer data received: " + acceleration);
-                        Debug.Log("Gyroscope data received: " + gyroscope);
+                        // Debug.Log("Gyroscope data received: " + gyroscope);
+
+                        DetectJump(acceleration);
+                        DetectLeftRightMotion(acceleration);
                     }
                 }
             }
@@ -92,5 +104,53 @@ public class SerialDataReceiver : MonoBehaviour
         {
             serialPort.Close();
         }
+    }
+
+    void DetectJump(Vector3 acceleration)
+    {
+        // Threshold for detecting a jump
+        float jumpThreshold = 2.0f; // Adjust this value based on your requirements
+
+        if (acceleration.z > jumpThreshold)
+        {
+            OnJumpDetected();
+            cooldownTimer = 0;
+        }
+    }
+
+    void DetectLeftRightMotion(Vector3 acceleration)
+    {
+        // Thresholds for detecting left and right motions
+        float leftThreshold = -1.0f; // Adjust this value based on your requirements
+        float rightThreshold = 1.0f; // Adjust this value based on your requirements
+
+        if (acceleration.x < leftThreshold)
+        {
+            OnLeftMotionDetected();
+            cooldownTimer = 0;
+        }
+        else if (acceleration.x > rightThreshold)
+        {
+            OnRightMotionDetected();
+            cooldownTimer = 0;
+        }
+    }
+
+    void OnJumpDetected()
+    {
+        Debug.LogWarning("Jump detected at " + Time.time);
+        // Add your jump handling code here
+    }
+
+    void OnLeftMotionDetected()
+    {
+        Debug.LogWarning("Left motion detected at " + Time.time);
+        // Add your left motion handling code here
+    }
+
+    void OnRightMotionDetected()
+    {
+        Debug.LogWarning("Right motion detected at " + Time.time);
+        // Add your right motion handling code here
     }
 }
