@@ -5,7 +5,7 @@ public class GroundSpawner : MonoBehaviour
     [SerializeField] GameObject groundTile;
     Vector3 nextSpawnPoint;
 
-    public void SpawnTile(bool spawnItems) 
+    public void SpawnTile(bool spawnItems)
     {
         GameObject temp = Instantiate(groundTile, nextSpawnPoint, Quaternion.identity);
         nextSpawnPoint = temp.transform.GetChild(1).transform.position;
@@ -15,7 +15,6 @@ public class GroundSpawner : MonoBehaviour
             temp.GetComponent<GroundTile>().SpawnObstacle();
         }
     }
-
 
 
     // Start is called before the first frame update
@@ -33,5 +32,4 @@ public class GroundSpawner : MonoBehaviour
             }
         }
     }
-
 }
