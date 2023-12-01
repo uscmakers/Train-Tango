@@ -47,8 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Sequencing\MMInputSequenceRecorderEditor.cs" />
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMF_PlayerEditor.cs" />
-     <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMFeedbackStyling.cs" />
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMFeedbacksConfiguration.cs" />
+     <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMFeedbackStyling.cs" />
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMF_PlayerCopy.cs" />
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMF_PlayerConfiguration.cs" />
      <Compile Include="Assets\Feel\MMFeedbacks\Editor\Core\MMF_FeedbackInspector.cs" />

@@ -75,15 +75,15 @@
      <Compile Include="Assets\Feel\MMTools\Editor\MMAchievements\MMAchievementMenu.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMMaintenance\MMCleanEmptyFolders.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAI\AIActionInspectorDrawer.cs" />
-     <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMEnumConditionAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMConditionAttributeDrawer.cs" />
+     <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMEnumConditionAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMUtilities\MMScreenshotEditor.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMDropdownAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMVision\MMConeOfVision2DInspector.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMVectorAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAudio\AudioAnalyzer\MMAudioAnalyzerEditor.cs" />
-     <Compile Include="Assets\Feel\MMTools\Editor\MMCurves\MMPlotterEditor.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMGUI\MMHealthBarEditor.cs" />
+     <Compile Include="Assets\Feel\MMTools\Editor\MMCurves\MMPlotterEditor.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMHiddenAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMAttributes\MMColorAttributeDrawer.cs" />
      <Compile Include="Assets\Feel\MMTools\Editor\MMVision\MMConeOfVisionInspector.cs" />

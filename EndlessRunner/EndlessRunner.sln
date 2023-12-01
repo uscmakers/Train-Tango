@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Cin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools", "MoreMountains.Tools.csproj", "{d8c5f76d-dc79-549c-16ef-3020fe909007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools.Editor", "MoreMountains.Tools.Editor.csproj", "{d4f3c51a-67b5-8773-5bfe-3d7900b90911}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.TextMeshPro", "MoreMountains.Feedbacks.TextMeshPro.csproj", "{a16f3ae4-3e68-1c9e-4370-232ed0efaf7d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Tools.Editor", "MoreMountains.Tools.Editor.csproj", "{d4f3c51a-67b5-8773-5bfe-3d7900b90911}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreMountains.Feedbacks.Editor", "MoreMountains.Feedbacks.Editor.csproj", "{1b7c2381-bac8-ec24-ed4b-3239cfa024e0}"
 EndProject
@@ -46,10 +46,10 @@ Global
 		{31016302-f77b-0870-7a41-80f9fadd63b7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{d8c5f76d-dc79-549c-16ef-3020fe909007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d8c5f76d-dc79-549c-16ef-3020fe909007}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{d4f3c51a-67b5-8773-5bfe-3d7900b90911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{d4f3c51a-67b5-8773-5bfe-3d7900b90911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a16f3ae4-3e68-1c9e-4370-232ed0efaf7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a16f3ae4-3e68-1c9e-4370-232ed0efaf7d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d4f3c51a-67b5-8773-5bfe-3d7900b90911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d4f3c51a-67b5-8773-5bfe-3d7900b90911}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1b7c2381-bac8-ec24-ed4b-3239cfa024e0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1b7c2381-bac8-ec24-ed4b-3239cfa024e0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ebd82e49-8798-beca-aa96-34c7552aa628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
